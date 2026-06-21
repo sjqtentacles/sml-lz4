@@ -1,0 +1,8 @@
+$(SML_LIB)/basis/basis.mlb
+
+../lib/github.com/sjqtentacles/sml-lz4/sources.mlb
+
+harness.sml
+test.sml
+entry.sml
+main.sml
