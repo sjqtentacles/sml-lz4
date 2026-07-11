@@ -76,6 +76,28 @@ end
 back-reference offset of zero, an offset that points before the start of the
 output, or truncated literal/offset bytes).
 
+## Example
+
+`make example` builds and runs [`examples/demo.sml`](examples/demo.sml), which
+compresses and round-trips a repetitive string and a low-repetition string,
+and shows `decompress` raising `Lz4` on truncated input (output is
+byte-identical under MLton and Poly/ML):
+
+```
+LZ4 block codec over a repetitive string:
+  original length     = 59 bytes
+  compressed length   = 26 bytes
+  round-trip matches  = true
+
+Decompressing malformed input:
+  Lz4 raised, as expected, on malformed input
+
+LZ4 block codec over a low-repetition string:
+  original length     = 21 bytes
+  compressed length   = 23 bytes
+  round-trip matches  = true
+```
+
 ## Testing
 
 The test suite (strict TDD: written before the implementation) covers
