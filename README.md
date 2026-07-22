@@ -1,5 +1,7 @@
 # sml-lz4
 
+[![CI](https://github.com/sjqtentacles/sml-lz4/actions/workflows/ci.yml/badge.svg)](https://github.com/sjqtentacles/sml-lz4/actions/workflows/ci.yml)
+
 Pure [Standard ML](https://en.wikipedia.org/wiki/Standard_ML) implementation of
 the **LZ4 block format** — compression and decompression — with **zero
 dependencies**. Builds and tests cleanly under both [MLton](http://mlton.org/)
